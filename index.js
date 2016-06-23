@@ -45,7 +45,7 @@ ws.onopen = function() {
 ws.onmessage = function (evt) {
     got++
     document.body.innerHTML+="<b>Got "+evt.data+"</b><br>"
-    if(got>count){
+    if(got>=count){
     	document.body.innerHTML+="<b>Success</b><br>"
     }
 };
